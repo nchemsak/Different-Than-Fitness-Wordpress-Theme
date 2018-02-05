@@ -44,7 +44,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'original-images/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'differentthanfitness/images2/'
+                    dest: 'differentthanfitness/images/'
                 }]
             }
         },
