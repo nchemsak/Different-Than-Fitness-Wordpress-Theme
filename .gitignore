@@ -1,0 +1,7 @@
+.DS_Store
+.sass-cache
+node_modules
+original-images
+sass/styles.full.css
+sass/styles.full.css.map
+creds
