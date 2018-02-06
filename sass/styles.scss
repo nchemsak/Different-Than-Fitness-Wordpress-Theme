@@ -3,19 +3,19 @@ Theme Name: Different Than Fitness
 */
 
 // FONTS
-// $font-stack-handwritten: 'Gochi Hand',
-// sans-serif;
-$font-stack-clean: 'Montserrat',
-sans-serif;
-
+// $font-stack-handwritten: 'Gochi Hand',  
+// sans-serif; 
+$font-stack-clean: 'Montserrat',     
+sans-serif;   
  
+  
 // COLORS
 $color-red: #AC0101;
-$color-grey: #3c3d41;  
-
+$color-grey: #3c3d41;   
+ 
 
 // NAVBAR DIMENSIONS 
-$navbar-height: 45px;
+$navbar-height: 45px; 
  
 ///////////////////// RESPONSIVE BOOTSTRAP DEFINITIONS \\\\\\\\\\\\\\\\\\\\\\\\\
 @mixin xs-only {
@@ -32,8 +32,8 @@ $navbar-height: 45px;
 
 @mixin sm {
     @media (min-width: 768px) {
-        @content;
-    }
+        @content;  
+    } 
 }
 
 @mixin md {

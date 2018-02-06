@@ -7,7 +7,7 @@
                 <a href="/"><img src="/wp-content/themes/differentthanfitnesstheme/images/DT-logo-3.png" class="img-responsive dtf-logo" alt="Different Than Fitness - Nashville TN" /></a>
             </div>
             <div class="col-md-4 footer-ns animated fadeInRight">
-                <h4>Inspire <br />—--------</h4>
+                <h4>Inspire <br />—--------</h4> 
                 <p>“Some workouts are greater than…
                     <br /> Some workouts are less than…
                     <br /> Some workouts are <strong>DIFFERENT THAN.</strong>”
@@ -16,8 +16,8 @@
                 </p>
                 <p>© 2018 Different Than Fitness</p> 
             </div>
-            <div class="col-md-3 footer-nav animated fadeInUp" id="footer-menu-links">
-                <h4>Quick Links <br />—--------------</h4>
+            <div class="col-md-3 footer-nav animated fadeInUp" id="footer-menu-links"> 
+                <h4>Quick Links <br />—--------------</h4> 
                 <div class="col-md-6">
                     <ul class="list">
                         <li><a href="#">About Me</a></li>

@@ -89,11 +89,11 @@ function main_enqueue_scripts()
 
 
 
-    }
+    } 
 }
-add_action('wp_enqueue_scripts', 'main_enqueue_scripts'); // Add Custom Scripts to wp_head
+add_action('wp_enqueue_scripts', 'main_enqueue_scripts'); // Add Custom Scripts to wp_head 
 add_theme_support( 'post-thumbnails');
-set_post_thumbnail_size( 200, 200, false );
+set_post_thumbnail_size( 200, 200, false );   
 
 // Load CSS styles
 function main_enqueue_css()
@@ -114,9 +114,9 @@ function main_enqueue_css()
    	wp_enqueue_style('style-css');
 
 
-	wp_register_style('styles', get_template_directory_uri() . '/css/styles.css' );
+	wp_register_style('styles', get_template_directory_uri() . '/css/styles.min.css' );
    	wp_enqueue_style('styles');
-
+ 
 
 
 

@@ -3,13 +3,13 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         jshint: {
-            files: ['differentthanfitness/js/*.js'],
+            files: ['differentthanfitnesstheme/js/*.js'],
             options: {
                 predef: ["document", "console", "Module", "$", ],
                 esnext: true,
                 globalstrict: true,
                 globals: {}, //ex: {"Sandwich": true, "require": true}
-                browserify: true 
+                browserify: true
             }
         },
 
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'sass/',
                     src: ['styles.full.css'],
-                    dest: 'differentthanfitness/css/',
+                    dest: 'differentthanfitnesstheme/css/',
                     ext: '.min.css'
                 }]
             }
@@ -37,19 +37,19 @@ module.exports = function(grunt) {
         imagemin: {
             dynamic: {
                 options: {
-                    optimizationLevel: 7
+                    // optimizationLevel: 2
 
                 },
                 files: [{
                     expand: true,
                     cwd: 'original-images/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'differentthanfitness/images/'
+                    dest: 'differentthanfitnesstheme/images/'
                 }]
             }
         },
 
-
+        // for local development
         'http-server': {
 
             'dev': {
@@ -72,6 +72,28 @@ module.exports = function(grunt) {
             }
         },
 
+
+        // FTP push to server
+        ftp_push: {
+            your_target: {
+                options: {
+                    authKey: "serverA",
+                    host: "ftp.differentthanfitness.com",
+                    dest: "/public_html/wp-content/themes/"
+
+                },
+                files: [{
+                    expand: true,
+                    cwd: '.',
+                    src: [
+                        "differentthanfitnesstheme/**"
+                    ]
+                }]
+            }
+        },
+
+
+
         watch: {
             // reload gruntfile.js if it changes while running
             configFiles: {
@@ -84,13 +106,18 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             javascripts: {
-                files: ['differentthanfitness/js/*.js'],
-                tasks: ['jshint']
+                files: ['differentthanfitnesstheme/js/*.js'],
+                tasks: ['jshint', 'ftp_push']
             },
             sass: {
                 files: ['sass/styles.scss'],
-                tasks: ['sass', 'cssmin']
+                tasks: ['sass', 'cssmin', 'ftp_push']
             },
+            php: {
+                files: ['differentthanfitnesstheme/*.php'],
+                tasks: ['ftp_push']
+            }
+
 
         }
     });
@@ -98,7 +125,7 @@ module.exports = function(grunt) {
     require('jit-grunt')(grunt);
 
 
-    // require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+    // grunt.registerTask('default', ['http-server:dev', 'jshint', 'sass', 'cssmin', 'imagemin', 'ftp_push', 'watch']);
     grunt.registerTask('default', ['http-server:dev', 'jshint', 'sass', 'cssmin', 'imagemin', 'watch']);
 
 };

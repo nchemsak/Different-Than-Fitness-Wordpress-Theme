@@ -5,3 +5,6 @@ original-images
 sass/styles.full.css
 sass/styles.full.css.map
 creds
+.ftpauth
+differentthanfitnesstheme/lib
+package-lock.json

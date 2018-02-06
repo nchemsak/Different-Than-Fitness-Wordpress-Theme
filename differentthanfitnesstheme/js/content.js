@@ -9,7 +9,7 @@ window.onscroll = function() {
     // ribbonFunction(); 
 }; 
  
-function scrollFunction() {  
+function scrollFunction() {   
     var myB = document.getElementById("myBtn");
     myB.style.display = "none"; 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
