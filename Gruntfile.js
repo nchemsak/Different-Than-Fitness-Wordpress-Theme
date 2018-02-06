@@ -78,6 +78,15 @@ module.exports = function(grunt) {
             your_target: {
                 options: {
                     authKey: "serverA",
+
+                    // create a file named .ftpauth with info below.  Must be in same folder as gruntfile.js
+                    // {
+                    //     "serverA":{
+                    //         "username":"PU TUSERNAME HERE",
+                    //         "password":"PUT PW HERE"
+                    //     }
+                    // }
+
                     host: "ftp.differentthanfitness.com",
                     dest: "/public_html/wp-content/themes/"
 
