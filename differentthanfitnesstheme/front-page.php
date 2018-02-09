@@ -32,6 +32,9 @@
    <h2 class="text-center">coming soon . . .</h2>
 
 
+
+<!-- ***************************************************************************************************** -->
+<!-- delete body, html, and wp_footer() tags below AND uncomment get_footer tag -->
 <!-- <?php get_footer(); ?> -->
 
 
