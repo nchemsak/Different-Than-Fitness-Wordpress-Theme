@@ -32,4 +32,10 @@
    <h2 class="text-center">coming soon . . .</h2>
 
 
-<?php get_footer(); ?>
+<!-- <?php get_footer(); ?> -->
+
+
+<?php wp_footer(); ?> 
+</body>
+
+</html>

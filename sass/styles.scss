@@ -433,7 +433,8 @@ body {
 #tiles {
     // margin-top: 40px;
     .pic-one {
-        background: url(/wp-content/themes/differentthanfitnesstheme/images/lacey.jpg) center no-repeat;
+        // background: url(/wp-content/themes/differentthanfitnesstheme/images/lacey.jpg) center no-repeat;
+        background: center no-repeat;
         background-size: cover;
         @include zoom;
     }

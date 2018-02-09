@@ -4,7 +4,7 @@
 // When the user scrolls down 20px from the top of the document, show the button
 // button HTML is located on the FOOTER template.
 window.onscroll = function() {
-    scrollFunction(); 
+    scrollFunction();  
     // scrollSticky();  
     // ribbonFunction(); 
 }; 

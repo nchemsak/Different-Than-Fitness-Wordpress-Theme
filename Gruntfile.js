@@ -106,9 +106,9 @@ module.exports = function(grunt) {
         watch: {
             // reload gruntfile.js if it changes while running
             configFiles: {
-                files: ['gruntfile.js'],
+                files: ['Gruntfile.js'],
                 options: {
-                    reload: true
+                    reload: true   
                 }
             },
             options: {
@@ -123,8 +123,8 @@ module.exports = function(grunt) {
                 tasks: ['sass', 'cssmin', 'ftp_push']
             },
             php: {
-                files: ['differentthanfitnesstheme/*.php'],
-                tasks: ['ftp_push']
+                files: ['differentthanfitnesstheme/*.php','differentthanfitnesstheme/page-templates/*.php'],
+                tasks: ['ftp_push'] 
             }
 
 

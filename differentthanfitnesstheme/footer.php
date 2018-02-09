@@ -1,4 +1,4 @@
-<!-- <div class="container">
+<div class="container">
     <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
     <footer id="footer">
 
@@ -48,11 +48,11 @@
         <p>Custom Website Design
             <br class="hidden-sm hidden-md hidden-lg" /> <a href="http://www.ephemeralwave.com" target="_blank">eWave Studio</a></p>
     </section>
-</div> -->
+</div>
 
-</body>
+<!-- </body>
 
-</html>  
+</html>   -->
 <?php wp_footer(); ?> 
 </body>
 
