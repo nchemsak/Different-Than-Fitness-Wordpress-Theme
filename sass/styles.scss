@@ -362,6 +362,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%; // background-color: #c5bd99;
     // background-image: url(/images/b36.png);
+    @include xs-only {
+        // padding-top: 144px;
+    }
 }
 
 
@@ -1048,4 +1051,24 @@ nav.btn-bar {
     label {
         display: block;
     }
+}
+
+// index section
+#index {
+
+    padding-top: 200px;
+}
+
+
+#tribe-events-content .tribe-events-calendar td {
+    background-color: #fff;
+}
+
+#tribe-geo-results h2.tribe-events-page-title, h2.tribe-events-page-title {
+    color: #fff;
+}
+
+.tribe-events-list-separator-month+.type-tribe_events.tribe-events-first {
+    background-color: #fff;
+    padding: 15px;
 }

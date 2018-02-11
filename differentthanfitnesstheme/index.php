@@ -1,19 +1,19 @@
 <?php get_header(); ?>
-<main>
+<section id="index">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <!--index.php-->
-                <div id="content" class="regularpage">
-                    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-                    <div class="usercontentitem">
-                        <h1>	<?php the_content(); ?> </h1>
-                    </div>
-                    <?php endwhile; ?>
-                    <?php endif; ?>
-                </div>
-            </div>
+        <div class="background">
         </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                <h1><?php the_title(); ?></h1>
+                <?php the_content(); ?>
+                <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+            
+        </div>
+        <div class="transparent-spacer"></div>
     </div>
-</main>
+</section>
 <?php get_footer(); ?>
