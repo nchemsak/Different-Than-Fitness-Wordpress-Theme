@@ -1,6 +1,20 @@
 <?php
 
-require_once('wp_bootstrap_navwalker.php');
+// require_once('wp_bootstrap_navwalker.php');
+
+
+// require_once get_template_directory() . '/wp_bootstrap_navwalker.php';
+
+
+if ( ! file_exists( get_template_directory() . '/wp_bootstrap_navwalker.php' ) ) {
+	// file does not exist... return an error.
+	return new WP_Error( 'wp-bootstrap-navwalker-missing', __( 'It appears the wp_bootstrap_navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
+} else {
+	// file exists... require it.
+    require_once get_template_directory() . '/wp_bootstrap_navwalker.php';
+}
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	Theme Setup
@@ -8,13 +22,13 @@ require_once('wp_bootstrap_navwalker.php');
 
 if ( ! function_exists( 'site_setup' ) ) :
 
-function site_setup() {
+function site_setup() { 
     // Add Menu Support
-    add_theme_support('menus');
+    add_theme_support('menus'); 
 
     // Register Menus
-    register_nav_menus( array(
-//        'main-menu' => __('Main Menu','jjwendel'), // Main Navigation
+    register_nav_menus( array( 
+       'primary' => __('Primary Menu','DIFFERENTTHANFITNESSTHEME') // Main Navigation
 //        'footer-menu' => __('Quicklinks','jjwendel') // Footer Navigation
     ));
 
@@ -27,7 +41,7 @@ function site_setup() {
 		'comment-form',
 		'comment-list',
 		'gallery',
-		'caption',
+		'caption', 
 	) );
 
 	/*
@@ -108,7 +122,7 @@ function main_enqueue_css()
 	wp_register_style('fontawesome-css', get_template_directory_uri() . '/lib/fontawesome/css/font-awesome.min.css');
     wp_enqueue_style('fontawesome-css');
 
-	wp_enqueue_style('wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat', false);
+	wp_enqueue_style('wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:300,400,700|Mrs+Saint+Delafield|Gochi+Hand|Roboto+Mono', false);
 
 	wp_register_style('style-css', get_template_directory_uri() . '/style.css' );
    	wp_enqueue_style('style-css');

@@ -2,14 +2,14 @@
 <?php get_header(); ?>
 
 
-
-<body id="body" class="content-body scrollAdjust">
+<section id="contact-page-template" class="content-body scrollAdjust">
+<!-- <body id="body" class="content-body scrollAdjust"> -->
     <div class="container">
         <div id="about-me">
             <div class="background">
             </div>
             <div class="inner-page-wrapper">
-                <h1>Contact me.</h1>
+                <h1>Contact me.</h1> 
                 <div class="row">
                     <div class="col-xs-12">
                         <?php if (have_posts()): while (have_posts()) : the_post(); ?>
@@ -22,7 +22,7 @@
             <div class="transparent-spacer"></div>
         </div>
     </div>
-
+</section>
 
 
             <?php get_footer(); ?>

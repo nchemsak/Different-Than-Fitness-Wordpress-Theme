@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -9,18 +9,16 @@
     </title>
     <?php wp_head(); ?>
 </head>
-
-<body id="body">
-    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <!--BELOW IS AN EXAMPLE USING THE BOOTSTRAP NAVWALKER MENU: wp_bootstrap_navwalker.php-->
-    <div id="all-headings" class="content-page-heading-wrapper">
-        <div class="large-banner-wrapper">
-            <div id="sticky-nav-wrapper" class="navbar-fixed-top">
-                <div id="black-banner-section">
-                    <a href="/"><img src="/wp-content/themes/differentthanfitnesstheme/images/DT-logo-3.png" class="img-responsive dtf-logo" id="dtf-logo-contentpage-id" alt="Different Than Fitness - Nashville TN" /></a>
-                    <h2 id="dtf-heading-text">DIFFERENT THAN FITNESS</h2>
-                </div>
-              <header class="navbar navbar-default bs-docs-nav" role="banner">
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!--BELOW IS AN EXAMPLE USING THE BOOTSTRAP NAVWALKER MENU: wp_bootstrap_navwalker.php-->
+<div id="all-headings" class="content-page-heading-wrapper">
+    <div class="large-banner-wrapper">
+        <div id="sticky-nav-wrapper" class="navbar-fixed-top">
+            <div id="black-banner-section">
+                <a href="/"><img src="/wp-content/themes/differentthanfitnesstheme/images/DT-logo-3.png" class="img-responsive dtf-logo" id="dtf-logo-contentpage-id" alt="Different Than Fitness - Nashville TN" /></a>
+                <h2 id="dtf-heading-text">DIFFERENT THAN FITNESS</h2>
+            </div>
+            <header class="navbar navbar-default bs-docs-nav" role="banner">
                 <div class="container">
                     <div class="navbar-header">
                         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -30,14 +28,14 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                            <?php
-                                if(has_nav_menu('main-menu')){
-                                    wp_nav_menu(array(
-                                        'theme_location'  => 'main-menu',
-                                        'container'       => false, 
-                                        'menu_class'      => 'nav navbar-nav', 
-                                        'menu_id'         => 'main-menu',
+                    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                        <?php
+                                if(has_nav_menu('primary'))
+                                    { wp_nav_menu(array(
+                                        'theme_location'  => 'primary',
+                                        'container'       => 'div',
+                                        'menu_class'      => 'nav navbar-nav',
+                                        'menu_id'         => 'primary',
                                         'echo'            => true,
                                         'fallback_cb'     => 'wp_page_menu',
                                         'before'          => '',
@@ -49,9 +47,11 @@
                                     ));
                                 }
                             ?>
-                        </nav>
-                    </div>
-                </header>
-            </div>
+                    </nav>
+                </div>
+            </header>
         </div>
     </div>
+</div>
+
+<body id="body">

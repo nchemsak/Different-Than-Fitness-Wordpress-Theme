@@ -22,23 +22,15 @@
 	</div>
 </div>
 </main> -->
-
-
 <!-- <div class="logo-wrapper hidden-xs"> -->
-	<div class="logo-wrapper">
+<div class="logo-wrapper">
     <img src="/wp-content/themes/differentthanfitnesstheme/images/DT-logo-3.png" class="img-responsive dtf-logo" id="dtf-logo-id" alt="Different Than Fitness - Nashville TN" />
 </div>
-
-   <h2 class="text-center">coming soon . . .</h2>
-
-
-
-<!-- ***************************************************************************************************** -->
+<h2 class="text-center">coming soon . . .</h2>
+<!-- *********************************************************************************************** -->
 <!-- delete body, html, and wp_footer() tags below AND uncomment get_footer tag -->
 <!-- <?php get_footer(); ?> -->
-
-
-<?php wp_footer(); ?> 
+<?php wp_footer(); ?>
 </body>
 
 </html>

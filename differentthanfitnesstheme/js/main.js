@@ -5,7 +5,7 @@
 // button HTML is located on the FOOTER template.
 window.onscroll = function() {
     scrollFunction();
-    scrollSticky();
+    // scrollSticky();
     // ribbonFunction();
 };
 
@@ -30,21 +30,21 @@ function topFunction() {
 }
 
 
-function scrollSticky() { 
-    console.log($(window).scrollTop());
-    // if ($(window).scrollTop() > 294) {
-        if ($(window).scrollTop() > 960) {
-        $('#sticky-nav-wrapper').addClass('navbar-fixed-top');
-        $('#body').addClass('scrollAdjust');
-    }
+// function scrollSticky() { 
+//     console.log($(window).scrollTop());
+//     // if ($(window).scrollTop() > 294) {
+//         if ($(window).scrollTop() > 960) {
+//         $('#sticky-nav-wrapper').addClass('navbar-fixed-top');
+//         $('#body').addClass('scrollAdjust');
+//     }
 
-    // if ($(window).scrollTop() < 295) {
-         if ($(window).scrollTop() < 960) {
-        $('#sticky-nav-wrapper').removeClass('navbar-fixed-top');
-        $('#body').removeClass('scrollAdjust');
-    }
+//     // if ($(window).scrollTop() < 295) {
+//          if ($(window).scrollTop() < 960) {
+//         $('#sticky-nav-wrapper').removeClass('navbar-fixed-top');
+//         $('#body').removeClass('scrollAdjust');
+//     }
 
-}
+// }
 
 
 // function ribbonFunction() {

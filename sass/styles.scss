@@ -5,24 +5,24 @@ Theme Name: Different Than Fitness
 // FONTS
 // $font-stack-handwritten: 'Gochi Hand',  
 // sans-serif; 
-$font-stack-clean: 'Montserrat',     
-sans-serif;   
- 
-  
+$font-stack-clean: 'Montserrat',
+sans-serif; 
+
+
 // COLORS
 $color-red: #AC0101;
-$color-grey: #3c3d41;   
- 
+$color-grey: #3c3d41;
+
 
 // NAVBAR DIMENSIONS 
-$navbar-height: 45px; 
- 
+$navbar-height: 45px;
+
 ///////////////////// RESPONSIVE BOOTSTRAP DEFINITIONS \\\\\\\\\\\\\\\\\\\\\\\\\
 @mixin xs-only {
     @media (max-width: 767px) {
         @content;
     }
-} 
+}
 
 @mixin sm-only {
     @media (min-width: 768px) and (max-width: 991px) {
@@ -32,8 +32,8 @@ $navbar-height: 45px;
 
 @mixin sm {
     @media (min-width: 768px) {
-        @content;  
-    } 
+        @content;
+    }
 }
 
 @mixin md {
@@ -146,26 +146,26 @@ a {
     border-radius: 4px 4px 0 0;
     height: 95px;
     width: 100%;
-    z-index: 10000;   
+    z-index: 10000;
     transition: all .2s ease-in-out 0s;
     text-align: center;
     text-transform: uppercase;
-    transform: rotate(20deg); 
+    transform: rotate(20deg);
     &:hover {
         display: block;
         overflow: hidden;
-        float: left; 
+        float: left;
         background-color: $color-grey;
         background-image: url(/wp-content/themes/differentthanfitnesstheme/images/b20.png);
     }
-    &::before {  
+    &::before {
         line-height: 35px;
         font-family: FontAwesome;
         content: "\f106";
         -webkit-font-smoothing: antialiased;
-        font-size: 22px;   
+        font-size: 22px;
     }
-} 
+}
 
 
 img.dtf-logo {
@@ -275,20 +275,17 @@ img.dtf-logo {
     background-color: #fff;
     padding-bottom: 10px;
     background-image: url(/wp-content/themes/differentthanfitnesstheme/images/b36.png);
-    position: relative;
-    // height: 267px;
+    position: relative; // height: 267px;
     height: 100vh;
 
     img {
         margin: 0 auto;
-        width: 250px;
-        // width: 340px;
+        width: 250px; // width: 340px;
         // width: 25vw;
         height: auto;
         position: fixed;
         display: inline;
-        text-align: center;
-        // top: 0px;
+        text-align: center; // top: 0px;
         left: 0;
         right: 0;
         top: 20vh;
@@ -956,8 +953,8 @@ nav.btn-bar {
     #dtf-logo-contentpage-id {}
     #dtf-heading-text {
         display: inline-block;
-        font-size: 24px;
-        top: 21px;
+        font-size: 32px;
+        top: 13px;
         position: absolute;
         margin-left: 2vw;
         margin-right: 2vw;
@@ -1043,5 +1040,12 @@ nav.btn-bar {
     a {
         text-shadow: none !important;
         font-weight: 700;
+    }
+}
+
+// Contact page template
+#contact-page-template {
+    label {
+        display: block;
     }
 }
