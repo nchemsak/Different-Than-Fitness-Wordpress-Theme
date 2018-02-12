@@ -22,12 +22,12 @@ if ( ! file_exists( get_template_directory() . '/wp_bootstrap_navwalker.php' ) )
 
 if ( ! function_exists( 'site_setup' ) ) :
 
-function site_setup() { 
+function site_setup() {
     // Add Menu Support
-    add_theme_support('menus'); 
+    add_theme_support('menus');
 
     // Register Menus
-    register_nav_menus( array( 
+    register_nav_menus( array(
        'primary' => __('Primary Menu','DIFFERENTTHANFITNESSTHEME') // Main Navigation
 //        'footer-menu' => __('Quicklinks','jjwendel') // Footer Navigation
     ));
@@ -41,7 +41,7 @@ function site_setup() {
 		'comment-form',
 		'comment-list',
 		'gallery',
-		'caption', 
+		'caption',
 	) );
 
 	/*
@@ -103,11 +103,11 @@ function main_enqueue_scripts()
 
 
 
-    } 
+    }
 }
-add_action('wp_enqueue_scripts', 'main_enqueue_scripts'); // Add Custom Scripts to wp_head 
+add_action('wp_enqueue_scripts', 'main_enqueue_scripts'); // Add Custom Scripts to wp_head
 add_theme_support( 'post-thumbnails');
-set_post_thumbnail_size( 200, 200, false );   
+set_post_thumbnail_size( 200, 200, false );
 
 // Load CSS styles
 function main_enqueue_css()
@@ -130,7 +130,7 @@ function main_enqueue_css()
 
 	wp_register_style('styles', get_template_directory_uri() . '/css/styles.min.css' );
    	wp_enqueue_style('styles');
- 
+
 
 
 
