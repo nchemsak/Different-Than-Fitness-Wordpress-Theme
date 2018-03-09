@@ -29,7 +29,7 @@ function site_setup() {
     // Register Menus
     register_nav_menus( array(
        'primary' => __('Primary Menu','DIFFERENTTHANFITNESSTHEME') // Main Navigation
-//        'footer-menu' => __('Quicklinks','jjwendel') // Footer Navigation
+//        'footer-menu' => __('Quicklinks','DIFFERENTTHANFITNESSTHEME') // Footer Navigation
     ));
 
 	/*
@@ -158,7 +158,7 @@ function custom_pagination() {
             echo '<ul class="pagination">';
             foreach ( $pages as $page ) {
                     echo "<li>$page</li>";
-            }
+            } 
            echo '</ul>';
         }
 }
@@ -170,7 +170,7 @@ function main_paging_nav() {
 	global $wp_query, $wp_rewrite;
 
 	// Don't print empty markup if there's only one page.
-	if ( $wp_query->max_num_pages < 2 ) {
+	if ( $wp_query->max_num_pages < 2 ) {  
 		return;
 	}
 

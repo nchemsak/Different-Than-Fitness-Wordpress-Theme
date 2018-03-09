@@ -997,7 +997,10 @@ nav.btn-bar {
         font-size: 2em;
         font-weight: 700;
         line-height: 2em;
-        color: #FF7600;
+        // color: #FF7600;
+        color: $color-red; 
+
+
         @include xs-only {
             line-height: initial;
             font-size: 1.9em;

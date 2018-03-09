@@ -1,36 +1,72 @@
 <?php get_header(); ?>
-<!-- <main>
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12">
-	
-						<div id="content" class="regularpage">
-				<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-					<div class="usercontentitem">
-						<?php the_content(); ?>
-				   </div>
-				   <div class="text-center">
-							<a href="https://www.facebook.com/DifferentThanFitness/" target="_blank" ><i class="fa fa-facebook-square" aria-hidden="true" data-toggle="tooltip" title="Facebook" data-placement="left"></i></a>
-				   			<a href="https://www.instagram.com/differentthanfitness/" target="_blank" ><i class="fa fa-instagram" aria-hidden="true" data-toggle="tooltip" title="Instagram" data-placement="top"></i></a>
-				   			<a href="https://twitter.com/differentthantn" target="_blank" ><i class="fa fa-twitter-square" aria-hidden="true" data-toggle="tooltip" title="Twitter" data-placement="right"></i></a>
-					</div>
-				<?php endwhile; ?>
-				<?php endif; ?>
+section id="content-page-template" class="content-body scrollAdjust">
+    <div class="container">
+        <div id="about-me">
+            <div class="background">
+            </div>
 
-			</div>
-		</div>
-	</div>
-</div>
-</main> -->
-<!-- <div class="logo-wrapper hidden-xs"> -->
-<div class="logo-wrapper">
-    <img src="/wp-content/themes/differentthanfitnesstheme/images/DT-logo-3.png" class="img-responsive dtf-logo" id="dtf-logo-id" alt="Different Than Fitness - Nashville TN" />
-</div>
-<h2 class="text-center">coming soon . . .</h2>
-<!-- *********************************************************************************************** -->
-<!-- delete body, html, and wp_footer() tags below AND uncomment get_footer tag -->
-<!-- <?php get_footer(); ?> -->
-<?php wp_footer(); ?>
-</body>
+            <div class="transparent-spacer"></div>
+                        <div class="transparent-spacer"></div>
 
-</html>
+            <section id="tiles">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <a href="<?php the_field('tile_1_link'); ?>">
+                            <div class="row no-gutters">
+                                <div class="col-xs-4 col-sm-12 services-frame animated fadeInLeft">
+                                    <?php $image1 = get_field('tile_1_photo'); ?>
+                                    <div class="card-img pic-one" alt="<?php echo $image1['alt']; ?>" style="background-image: url(<?php echo $image1['url']; ?>)"></div>
+                                </div>
+                                <div class="col-xs-8 col-sm-12 caption animated fadeInUp">
+                                    <?php the_field('tile_1_text'); ?>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <a href="<?php the_field('tile_2_link'); ?>">
+                            <div class="row no-gutters">
+                                <div class="col-xs-4 col-sm-12 services-frame animated fadeInDown">
+                                    <?php $image2 = get_field('tile_2_photo'); ?>
+                                    <div class="card-img pic-one" alt="<?php echo $image2['alt']; ?>" style="background-image: url(<?php echo $image2['url']; ?>)"></div>
+                                </div>
+                                <div class="col-xs-8 col-sm-12 caption animated fadeInUp">
+                                    <?php the_field('tile_2_text'); ?>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <a href="<?php the_field('tile_3_link'); ?>">
+                            <div class="row no-gutters">
+                                <div class="col-xs-4 col-sm-12 services-frame animated fadeInRight">
+                                    <?php $image3 = get_field('tile_3_photo'); ?>
+                                    <div class="card-img pic-one" alt="<?php echo $image3['alt']; ?>" style="background-image: url(<?php echo $image3['url']; ?>)"></div>
+                                </div>
+                                <div class="col-xs-8 col-sm-12 caption animated fadeInUp">
+                                    <?php the_field('tile_3_text'); ?>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <a href="<?php the_field('tile_4_link'); ?>">
+                            <div class="row no-gutters">
+                                <div class="col-xs-4 col-sm-12 services-frame animated fadeInRight">
+                                    <?php $image4 = get_field('tile_4_photo'); ?>
+                                    <div class="card-img pic-one" alt="<?php echo $image4['alt']; ?>" style="background-image: url(<?php echo $image4['url']; ?>)"></div>
+                                </div>
+                                <div class="col-xs-8 col-sm-12 caption animated fadeInUp">
+                                    <?php the_field('tile_4_text'); ?> </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- <hr /> -->
+            <div class="transparent-spacer"></div>
+        </div>
+    </div>
+</section>
+
+ <?php get_footer(); ?>  

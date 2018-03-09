@@ -20,25 +20,25 @@
                 <h4>Quick Links <br />—--------------</h4> 
                 <div class="col-md-6">
                     <ul class="list">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">About DTF</a></li>
-                        <li><a href="#">Media</a></li>
+                        <li><a href="/about-me">About Me</a></li>
+                        <li><a href="/about-different-than-fitness/">About DTF</a></li>
+                        <li><a href="/media/">Media</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <ul class="list">
-                        <li><a href="#">Inspire</a></li>
-                        <li><a href="#">Classes</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/inspire/">Inspire</a></li>
+                        <li><a href="/events/">Classes</a></li>
+                        <li><a href="/contact/">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-2 animated fadeInDown footer-nav dtf-logo" id="footer-social">
                 <h4>Social Media <br />—----------------</h4>
                 <ul>
-                    <li><a class="icon-link facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="icon-link twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="icon-link instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/DifferentThanFitness/" class="icon-link facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/differentthantn" target="_blank" class="icon-link twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/differentthanfitness/" target="_blank" class="icon-link instagram"><i class="fa fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>
