@@ -1,5 +1,27 @@
 <?php /* Template Name: Content Page Template */ ?>
 <?php get_header(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- <body id="body" class="content-body scrollAdjust"> -->
 <section id="content-page-template" class="content-body scrollAdjust">
     <div class="container">

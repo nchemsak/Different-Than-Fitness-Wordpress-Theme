@@ -1,12 +1,10 @@
 <?php get_header(); ?>
-section id="content-page-template" class="content-body scrollAdjust">
+<section id="content-page-template" class="content-body scrollAdjust">
     <div class="container">
         <div id="about-me">
-            <div class="background">
+            <div class="background"> 
             </div>
 
-            <div class="transparent-spacer"></div>
-                        <div class="transparent-spacer"></div>
 
             <section id="tiles">
                 <div class="row">
